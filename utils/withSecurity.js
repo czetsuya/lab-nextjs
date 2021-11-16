@@ -1,6 +1,5 @@
-import {Authenticator, CheckboxField, useAuthenticator} from "@aws-amplify/ui-react";
-
-const {withAuthenticator} = require("@aws-amplify/ui-react");
+import {Authenticator, CheckboxField, useAuthenticator, withAuthenticator} from "@aws-amplify/ui-react";
+import '@aws-amplify/ui-react/styles.css';
 
 const withSecurity = (Component) => {
 
@@ -26,11 +25,11 @@ const withSecurity = (Component) => {
                     name="acknowledgement"
                     value="yes"
                 >
-                  I agree with the Terms & Conditions
+                  I agree with the <a href="/terms-and-conditions">Terms & Conditions</a>
                 </CheckboxField>
               </>
           );
-        },
+        }
       }
     },
     services: {
