@@ -19,14 +19,14 @@ const withSecurity = (Component) => {
                 <Authenticator.SignUp.FormFields/>
 
                 {/* Append & require Terms & Conditions field to sign up  */}
-                <CheckboxField
-                    errorMessage={validationErrors.acknowledgement}
-                    hasError={!!validationErrors.acknowledgement}
-                    name="acknowledgement"
-                    value="yes"
-                >
-                  I agree with the <a href="/terms-and-conditions">Terms & Conditions</a>
-                </CheckboxField>
+                {/*<CheckboxField*/}
+                {/*    errorMessage={validationErrors.acknowledgement}*/}
+                {/*    hasError={!!validationErrors.acknowledgement}*/}
+                {/*    name="acknowledgement"*/}
+                {/*    value="yes"*/}
+                {/*>*/}
+                {/*  I agree with the <a href="/terms-and-conditions">Terms & Conditions</a>*/}
+                {/*</CheckboxField>*/}
               </>
           );
         }
