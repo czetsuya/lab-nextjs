@@ -18,15 +18,15 @@ const withSecurity = (Component) => {
                 {/* Re-use default `Authenticator.SignUp.FormFields` */}
                 <Authenticator.SignUp.FormFields/>
 
-                {/* Append & require Terms & Conditions field to sign up  */}
-                {/*<CheckboxField*/}
-                {/*    errorMessage={validationErrors.acknowledgement}*/}
-                {/*    hasError={!!validationErrors.acknowledgement}*/}
-                {/*    name="acknowledgement"*/}
-                {/*    value="yes"*/}
-                {/*>*/}
-                {/*  I agree with the <a href="/terms-and-conditions">Terms & Conditions</a>*/}
-                {/*</CheckboxField>*/}
+                {/*Append & require Terms & Conditions field to sign up*/}
+                <CheckboxField
+                    errorMessage={validationErrors.acknowledgement}
+                    hasError={!!validationErrors.acknowledgement}
+                    name="acknowledgement"
+                    value="yes"
+                    label="I agree with the Terms & Conditions"
+                >
+                </CheckboxField>
               </>
           );
         }
