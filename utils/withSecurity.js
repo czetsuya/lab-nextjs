@@ -1,7 +1,11 @@
+import React from 'react';
+import Link from 'next/link';
 import {
   Authenticator,
   Button,
   CheckboxField,
+  Divider,
+  Flex,
   Heading,
   Image,
   Text,
@@ -94,11 +98,24 @@ const withSecurity = (Component) => {
         const {tokens} = useTheme();
 
         return (
-            <View textAlign="center" padding={tokens.space.large}>
-              <Text color={`${tokens.colors.neutral['80']}`}>
-                &copy; All Rights Reserved 2021
-              </Text>
-            </View>
+            <React.Fragment>
+              <View textAlign="center" padding={tokens.space.large}>
+                <Text color={`${tokens.colors.neutral['80']}`}>
+                  Czetsuya Tech &copy; All Rights Reserved 2021
+                </Text>
+              </View>
+              <Divider/>
+              <View textAlign="center" padding={tokens.space.large}>
+                <Flex direction="column">
+                  <Link href="/resources/terms-and-conditions">
+                    <a>Terms and Conditions</a>
+                  </Link>
+                  <Link href="/resources/privacy-policy">
+                    <a>Privacy Policy</a>
+                  </Link>
+                </Flex>
+              </View>
+            </React.Fragment>
         );
       },
     },
