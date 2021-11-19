@@ -101,7 +101,7 @@ const withSecurity = (Component) => {
             <React.Fragment>
               <View textAlign="center" padding={tokens.space.large}>
                 <Text color={`${tokens.colors.neutral['80']}`}>
-                  Czetsuya Tech &copy; All Rights Reserved 2021
+                  &copy; 2021 Czetsuya Tech &reg; All Rights Reserved
                 </Text>
               </View>
               <Divider/>
